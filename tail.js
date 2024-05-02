@@ -20,7 +20,7 @@ let sampleArray = [1,2,3,4,5];
 console.log(tail([1]));
 console.log(tail([]));
 console.log(tail([1,2,3,4,5]));
-console.assert(tail(sampleArray).length === sampleArray.length - 1);
+assertEqual(tail(sampleArray).length, sampleArray.length - 1);
 console.log(tail(sampleArray));
 console.log(sampleArray);
 assertEqual(tail(sampleArray)[0], sampleArray[1]);
