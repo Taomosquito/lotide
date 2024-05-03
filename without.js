@@ -40,12 +40,12 @@ const without = function(source, itemsToRemove) {
 
 // Testing Conditions
 assertArraysEqual([1,2,3],[1,2,3]);
-without(["1","2","3"],["1","2","3"]);
+console.log(without(["1","2","3"],["1","2","3"]));
 assertArraysEqual(["1","2","3"],["1","2","3"]);
-without(["1","2","3"],["1","2",3]);
+console.log(without(["1","2","3"],["1","2",3]));
 assertArraysEqual(["1","2","3"],["1","2"]);
-without(["1","2","3"],["1","2"]);
-without(testingArrayA, testingArrayB);
+console.log(without(["1","2","3"],["1","2"]));
+console.log(without(testingArrayA, testingArrayB));
 console.log(testingArrayA);
 console.log(testingArrayB);
 assertArraysEqual(without(["1","2","3"],["1","2","3"]), []);
