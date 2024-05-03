@@ -27,16 +27,16 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 // Newly formed function that removes anything making arays unequal in the new value it returns.
-const without = function(source, itemsToRemove){
-  let result = []
-  for(let i = 0; i < source.length; i++){
-    if(source.includes(itemsToRemove[i])){
+const without = function(source, itemsToRemove) {
+  let result = [];
+  for (let i = 0; i < source.length; i++) {
+    if (source.includes(itemsToRemove[i])) {
       result.push(source[i]);
     }
   }
   console.log(result);
   return result;
-}
+};
 // Testing Conditions
 
 assertArraysEqual([1,2,3],[1,2,3]);
@@ -49,4 +49,4 @@ without(["1","2","3"],["1","2"]);
 without(testingArrayA, testingArrayB);
 console.log(testingArrayA);
 console.log(testingArrayB);
-assertArraysEqual(without(["1","2","3"],["1","2","3"]), [])
+assertArraysEqual(without(["1","2","3"],["1","2","3"]), []);
