@@ -33,7 +33,7 @@ const without = function(source, itemsToRemove){
   for(let i = 0; i < source.length; i++){
     if(itemsToRemove.includes(source[i])){
     } else {
-      result.pop();
+      result.splice(i, 1);
     }
   }
   console.log(result);
