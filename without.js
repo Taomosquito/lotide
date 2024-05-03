@@ -32,7 +32,6 @@ const without = function(source, itemsToRemove){
   let result = Array.from(source);
   for(let i = 0; i < source.length; i++){
     if(itemsToRemove.includes(source[i])){
-    } else {
       result.splice(i, 1);
     }
   }
