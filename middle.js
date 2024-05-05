@@ -23,26 +23,30 @@ const eqArrays = function(arrA, arrB) {
 
 
 const middle = function(arr) {
+// establishes the variables for later usage.  
   let returnedArr = [];
 
+  // starts the requirement calculation below.
   if (arr.length <= 2) {
     return returnedArr;
   }
 
+  // establishes important reference points.
   const length = arr.length;
   const midPoint = Math.floor(length / 2);
 
+ // checks for performs the conditional logic to determine which values I will be working with. 
   if (length % 2 === 0) {
     returnedArr.push(arr[midPoint - 1], arr[midPoint]);
   } else {
     returnedArr.push(arr[midPoint]);
   }
 
-  console.log(returnedArr);
+ // sends the value back to the function when called. 
   return returnedArr;
 }
-middle([1,2,3,4,5,6,7,8])
 
+// testing.
 assertArraysEqual(middle([1]), []); // Expected: []
 assertArraysEqual(middle([1,2]), []); // Expected: []
 assertArraysEqual(middle([1,2,3]), [2]); // Expected: [2]
