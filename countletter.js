@@ -1,3 +1,4 @@
+
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -31,3 +32,8 @@ assertEqual(result1['a'], 1);
 assertEqual(result1['A'], 1);
 assertEqual(result1['D'], 2);
 assertEqual(result1['H'], 1);
+
+
+
+
+console.log(countLetters("scott has Aphantasia"));
