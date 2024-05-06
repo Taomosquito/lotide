@@ -1,3 +1,4 @@
+// custom test function
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -6,7 +7,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-
+// newly created function with the purpose of counting letters in a string
 const countLetters = function (sentence) {
   let refObj = {}
   for (let i = 0; i < sentence.length; i++) {
@@ -19,8 +20,9 @@ const countLetters = function (sentence) {
     }
   }
   return refObj
-}
-console.log(countLetters("scott has ADHD"));
+};
+
+// testing
 const result1 = countLetters('scott has ADHD');
 assertEqual(result1['s'], 2);
 assertEqual(result1['c'], 1);
