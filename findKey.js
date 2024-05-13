@@ -28,8 +28,11 @@ const object1 =
 };
 
 // // Testing Callback Functions.
-const TestingCallback = (x) => x.stars === 1
-
+const TestingCallback1 = (x) => x.stars === 1
+const TestingCallback2 = (x) => x.stars === 2
+const TestingCallback3 = (x) => x.stars === 3
 
 // Example Usage:
-console.log(findKey(object1, TestingCallback));
+assertEqual(findKey(object1, TestingCallback1), "Blue Hill");
+assertEqual(findKey(object1, TestingCallback2), "noma");
+assertEqual(findKey(object1, TestingCallback3), "Akaleri");
